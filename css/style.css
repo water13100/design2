@@ -1,0 +1,142 @@
+*{
+    /* border:solid 1px; */
+}
+p{
+        font-family: "微軟正黑體",serif;
+}
+body{
+  height: 100%;
+  width: 100%;
+}
+.side-nav{
+	position: fixed;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+    z-index: 2;
+    background-color:#333;
+    padding-top: 1000px;
+    padding-bottom: 1000px;
+
+}
+
+ul li{
+    list-style: none;
+     
+}
+a {
+    text-decoration: none;
+}
+
+.side-nav__item{
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    color:#eee;
+    
+}
+.side-nav__item:hover{
+    color:rgb(255, 250, 180);
+    font-weight: 800;
+}
+
+.side-nav__item span{
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+
+}
+.side-nav .active .side-nav__item span{
+    left: 40%;
+    color: #fff;
+}
+
+.side-nav__item:before{
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 0px;
+    height: 30px;
+    background-color:rgb(91, 167, 253);
+    transition: all 0.5s;
+    border-radius: 50px 0px 0 50px;
+}
+.side-nav .active .side-nav__item:before{
+    width: 200px;
+}
+.home {
+    font-weight: 1000;
+
+    margin-top: 100px;
+    color:#eee;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+
+
+}
+.home :hover{
+    color:#fff;
+    background-color: rgb(91, 167, 253)
+    
+}
+.home span{
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px #eee;
+}
+.imgbox{
+    height: 700px;
+    overflow: hidden;
+}
+img{   
+max-height: 100%;
+}
+/* *****goood */
+
+.item h4{
+    color: #333;
+    font-size: 12px;
+    padding: 10px;
+    padding-bottom: 0;
+    
+}
+@media (max-width:768px){ 
+    .item{
+        height: 600px;
+        width: 100%;
+        
+    }
+    .side-nav{
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        background-color:#333;
+        padding-top: 700px;
+        padding-bottom: 700px;
+    
+    }
+    .side-nav__item{
+        display: inline-block;
+        width: 100px;
+        height: 20px;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 10px;
+        color:#eee;
+}
